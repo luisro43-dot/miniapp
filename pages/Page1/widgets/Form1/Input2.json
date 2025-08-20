@@ -1,0 +1,65 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFocus"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "errorMessage": "El email debe contener '@' y un dominio válido (ej: usuario@gmail.com)",
+  "iconAlign": "left",
+  "iconName": "airplane",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "7vt5lsfl1r",
+  "label": "Correo",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 46,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 14,
+  "needsErrorInfo": false,
+  "onFocus": "{{}}",
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
+  "parentColumnSpace": 5.40625,
+  "parentId": "etnlxbo2p2",
+  "parentRowSpace": 10,
+  "regex": "^[^@]+@[^@]+\\.[^@]+$",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "showStepArrows": false,
+  "topRow": 6,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "o167ph4ypv",
+  "widgetName": "Input2"
+}

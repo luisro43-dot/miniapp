@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 35,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "tint",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "u44c7r3btk",
+  "leftColumn": 39,
+  "minWidth": 50,
+  "mobileBottomRow": 35,
+  "mobileLeftColumn": 39,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 31,
+  "needsErrorInfo": false,
+  "onClick": "{{\n(() => {\n  // Verificar si el navegador soporta reconocimiento de voz\n  if (!('webkitSpeechRecognition' in window)) {\n    showAlert(\"Tu navegador no soporta reconocimiento de voz\", \"error\");\n    return;\n  }\n\n  const recognition = new window.webkitSpeechRecognition();\n  recognition.lang = 'es-ES';\n\n  recognition.onresult = (event) => {\n    const transcript = event.results[0][0].transcript;\n    // ¡CAMBIA Input1 por el nombre real de tu Input!\n    Input1.setValue(transcript);\n  };\n\n  recognition.onerror = (event) => {\n    showAlert(\"Error en el reconocimiento: \" + event.error, \"error\");\n  };\n\n  recognition.start();\n})()\n}}",
+  "parentColumnSpace": 13.984375,
+  "parentId": "etnlxbo2p2",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 43,
+  "topRow": 31,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "2jll1di1wk",
+  "widgetName": "BtnMic"
+}
